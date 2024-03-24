@@ -17,6 +17,7 @@ service PostService {
 message CreatePostRequest {
     string title = 1;
     string content = 2;
+    repeated string imagePath = 3;
 }
 
 message CreatePostResponse {}
