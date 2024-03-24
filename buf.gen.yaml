@@ -2,7 +2,7 @@ version: v1
 managed:
   enabled: true
   go_package_prefix:
-    default: github.com/dae-ta/dae-ta-idl/gen
+    default: github.com/dae-ta/deta-idl/gen
 
 plugins:
   - plugin: buf.build/community/stephenh-ts-proto

@@ -1,14 +1,14 @@
 {
-    "name": "@snackcident/appt-idl",
-    "description": "Appt IDL",
+    "name": "@deta/deta-idl",
+    "description": "deta IDL",
     "author": "goodpl",
-    "homepage": "https://github.com/snackcident/appt-idl",
+    "homepage": "https://github.com/dae-ta/appt-idl",
     "bugs": {
-      "url": "https://github.com/snackcident/appt-idl/issues"
+      "url": "https://github.com/dae-ta/deta-idl/issues"
     },
     "repository": {
       "type": "git",
-      "url": "https://github.com/snackcident/appt-idl.git"
+      "url": "https://github.com/dae-ta/deta-idl.git"
     },
     "publishConfig": {
       "registry": "https://npm.pkg.github.com"

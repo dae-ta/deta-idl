@@ -33,7 +33,6 @@ jobs:
           echo "::set-output name=github_short_sha::$(git rev-parse --short HEAD | cut -c1-7)"
 
       - name: Publish New Package with latest tag
-        if: steps.extract-ref.outputs.result == 'refs/heads/main'
         working-directory: gen/typescript
         run: |
           VERSION=$(TZ=Asia/Seoul date +'%Y.%m.%d-%H%M%S')-${{ steps.vars.outputs.github_short_sha }}
