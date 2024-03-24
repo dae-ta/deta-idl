@@ -1,0 +1,12 @@
+version: v1
+breaking:
+  use:
+    - FILE
+lint:
+  use:
+    - DEFAULT
+  ignore:
+    - google/api/annotations.proto
+    - google/api/http.proto
+    - google/type/date.proto
+    - google/type/datetime.proto

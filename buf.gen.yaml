@@ -1,0 +1,22 @@
+version: v1
+managed:
+  enabled: true
+  go_package_prefix:
+    default: github.com/deta/deta-idl/gen
+
+plugins:
+  - plugin: buf.build/community/stephenh-ts-proto
+    out: gen/typescript
+    opt:
+      - outputEncodeMethods=false
+      - outputJsonMethods=false
+      - outputClientImpl=false
+      - useOptionals=true
+      - unrecognizedEnum=false
+      - stringEnums=true
+      - forceLong=string
+      - esModuleInterop=true
+
+  - plugin: buf.build/connectrpc/es:v1.1.3
+    opt: target=ts
+    out: gen

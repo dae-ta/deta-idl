@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package deta.v1.post;
+
+import "google/api/annotations.proto";
+
+
+service PostService {
+    rpc CreatePost(CreatePostRequest) returns (CreatePostResponse) {
+        option (google.api.http) = {
+            post: "/post",
+            body: "*"
+        };
+    }
+};
+
+message CreatePostRequest {
+    string title = 1;
+    string content = 2;
+}
+
+message CreatePostResponse {}
