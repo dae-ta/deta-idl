@@ -1,0 +1,17 @@
+{
+    "name": "@snackcident/appt-idl",
+    "description": "Appt IDL",
+    "author": "goodpl",
+    "homepage": "https://github.com/snackcident/appt-idl",
+    "bugs": {
+      "url": "https://github.com/snackcident/appt-idl/issues"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/snackcident/appt-idl.git"
+    },
+    "publishConfig": {
+      "registry": "https://npm.pkg.github.com"
+    }
+  }
+  
